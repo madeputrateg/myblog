@@ -24,19 +24,19 @@ function Bodytext(props){
         rev="flex-lg-row";
         colour="#ffffff";
     }
-    return(<Container fluid className={"position-relative p-0 py-0 d-flex flex-column "+rev+" align-items-center justify-content-center "+ style.container} style={{backgroundColor:colour}}>
+    return(<Container fluid className={"position-relative p-5 d-flex flex-column "+rev+" align-items-center justify-content-between "+ style.container} style={{backgroundColor:colour}}>
         <Container fluid className="position-relative d-flex flex-column w-100 h-100 align-items-center justify-content-center">
                 <div className={robotoheavy.className+" h2"}>{props.title}</div>
                 <div className={roboto.className}>{props.paragraf}</div>
         </Container>
         <Container fluid className="position-relative d-flex w-100 h-100 align-items-center justify-content-center">
-            <Image
-                    src={props.gambar}
-                    alt="gambar"
-                    fill
-                    style={{objectFit:"contain"}}
-                >    
-            </Image>
+                <Image
+                        src={props.gambar}
+                        alt="gambar"
+                        fill
+                        style={{objectFit:"contain"}}
+                        >    
+                </Image>
         </Container>
     </Container>)
 }

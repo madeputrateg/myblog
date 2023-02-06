@@ -28,8 +28,8 @@ function Navbarblog(props){
                 <Nav.Link href="/project">
                   Project
                 </Nav.Link>
-                <Nav.Link href="/hobby">
-                  Hobby
+                <Nav.Link href="/achievement">
+                Achievement
                 </Nav.Link>
                 <Nav.Link href="/contact" >
                   Contact info

@@ -8,19 +8,19 @@ import Footer from "@/component/footer/footer";
 
 const data=[
     {
-        title:"agen sertifikat",
+        title:"Agen Sertifikat",
         text:"agen sertifikat adalah websites yang dibuat untuk memudahkan pengguna di dalam pembuatan sertifikat",
-        img:"/serigala.jpg",
+        img:"/agenser.svg",
     },
     {
-        title:"test",
-        text:"agen sertifikat adalah websites yang dibuat untuk memudahkan pengguna di dalam pembuatan sertifikat",
-        img:"/serigala.jpg",
+        title:"AI batu gunting kertas",
+        text:"AI adalah suatu mesin yang diberikan beberapa data agar dapat melakukan hal-hal yang sulit dilakukan menggunakan bahasa pemerogramaan. saya memebuat ai ini karena ingin memperdalam kemampuan di dalam machine learning",
+        img:"/gtt.png",
     },
     {
-        title:"test2",
-        text:"agen sertifikat adalah websites yang dibuat untuk memudahkan pengguna di dalam pembuatan sertifikat",
-        img:"/serigala.jpg",
+        title:"SIC backend",
+        text:"SIC memiliki website yang digunakan oleh organisasi tersebut untuk mengenalkan kegiatan dan anggota yang dimiliki oleh organisasi tersebut. website tersebut direncanakan untuk diupgrade sehingga memiliki backend yang menggunakan bahasa golang",
+        img:"/golang-img.png",
     }
 ]
 
@@ -28,7 +28,7 @@ function Project(props){
     const moduleround =(val,mod)=>{
         let modval = val%mod;
         if(modval<0){
-            modval=(modval*-1)-1;
+            modval=data.length+modval;
         }
         return modval;
     }
@@ -50,7 +50,6 @@ function Project(props){
                     <Bodytext reverse={false} title={data[moduleround(Selected,data.length)].title} gambar={data[moduleround(Selected,data.length)].img} paragraf={data[moduleround(Selected,data.length)].text}></Bodytext>
                 </Row>
             </Container>
-            <Footer/>
         </div>
     )
 }

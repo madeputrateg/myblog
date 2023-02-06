@@ -25,7 +25,7 @@ function Cyclecard(props){
     const moduleround =(val,mod)=>{
         let modval = val%mod;
         if(modval<0){
-            modval=(modval*-1)-1;
+            modval=data.length+modval;
         }
         return modval;
     }
@@ -54,8 +54,8 @@ function Cyclecard(props){
         <FiArrowLeft className={style.imagesize} onClick={leftClick}/>
             {show.current.map((val,ind)=>{
                 return(
-                    <Card key={ind+"cards"} style={{width:'10em',height:'15em'}} className="position-relative overflow-hidden mx-3">
-                    <Card.Img variant="top" src={val.img}></Card.Img>
+                    <Card key={ind+"cards"} style={{width:'14em',height:'19em'}} className="position-relative overflow-hidden mx-3">
+                    <Card.Img variant="top" src={val.img} style={{height:'8em'}}></Card.Img>
                     <Card.Body>
                         <Card.Title>{val.title}</Card.Title>
                         <Card.Text>

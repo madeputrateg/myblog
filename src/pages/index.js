@@ -10,24 +10,24 @@ import Footer from "@/component/footer/footer";
 
 const data=[
   {
-    paragraf:"Ajak atau ajag (Cuon alpinus)[2] adalah anjing hutan yang hidup di Asia, terutama di wilayah selatan dan timur. Ajak tidak sama dengan serigala.Ajak merupakan anjing asli Nusantara, terdapat di pulau Sumatra dan Jawa, mendiami terutama kawasa pegunungan dan hutan. Anjing kampung dan yang lainnya yang biasa dijadikan peliharaan di Indonesia, sebenarnya merupakan anjing impor yang berasal dari daerah lain. Ajak berperawakan sedang, berwarna cokelat kemerahan. Di bagian bawah dagu, leher, hingga ujung perut berwarna putih, sedangkan ekornya tebal kehitaman. Ajak biasa hidup bergerombol dalam lima hingga dua belas ekor, tergantung lingkungannya. Namun, pada keadaan tertentu, ajak dapat hidup soliter (menyendiri), seperti yang ditemukan di Taman Nasional Gunung Leuser dan Taman Nasional Bromo (Pasuruan).",
+    paragraf:"Hi let Me Intruduced myself my name is made putra teguh pramana and i am currently stuying to become a data analyis at udayana university. this blog is about my achivement and project that ihave made",
     title:"About MySelf",
-    gambar:"/serigala.jpg",
+    gambar:"/self.png",
   },
   {
-    paragraf:"masih berusaha buat ;(",
+    paragraf:"Here is some of my personal project that i made during my spare time that i have. all of it are hosted in this websites",
     title:"project",
-    gambar:"",
+    gambar:"/projectid.png",
   },
   {
-    paragraf:"belajar dengan rajin dan giat :)",
-    title:"Hobby",
-    gambar:"/buku.png",
+    paragraf:"Here is some of my achievement that i have achieve",
+    title:"Achievement",
+    gambar:"/achv.png",
   },  
   {
-    paragraf:"tetapi di saat masih kecil",
-    title:"Muka suhar",
-    gambar:"/suhar.png",
+    paragraf:"if you want to contact me, feel free to do so by contacting my contact information that's available in the websites ",
+    title:"Contact info",
+    gambar:"/contactt.png",
   }
 ]
 
@@ -41,7 +41,6 @@ export default function Home() {
           return(<Bodytext key={val.title} reverse={ind%2==0} title={val.title} gambar={val.gambar} paragraf={val.paragraf}></Bodytext>);
         })}
       </div>
-      <Footer/>
     </div>
   )
 }
