@@ -11,6 +11,7 @@ const data=[
         title:"Agen Sertifikat",
         text:"agen sertifikat adalah websites yang dibuat untuk memudahkan pengguna di dalam pembuatan sertifikat",
         img:"/agenser.svg",
+        link:"https://kelompokrplunud.github.io/front-end1/",
     },
     {
         title:"AI batu gunting kertas",
@@ -21,6 +22,7 @@ const data=[
         title:"SIC backend",
         text:"SIC memiliki website yang digunakan oleh organisasi tersebut untuk mengenalkan kegiatan dan anggota yang dimiliki oleh organisasi tersebut. website tersebut direncanakan untuk diupgrade sehingga memiliki backend yang menggunakan bahasa golang",
         img:"/golang-img.png",
+        link:"https://github.com/SIC-Unud/sic-web-backend",
     }
 ]
 

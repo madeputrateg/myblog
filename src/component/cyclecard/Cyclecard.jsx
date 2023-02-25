@@ -3,6 +3,8 @@ import { Card } from "react-bootstrap";
 import {FiArrowLeft} from "react-icons/fi";
 import {FiArrowRight} from "react-icons/fi";
 import { useLayoutEffect, useState, useRef} from "react";
+import {Col} from "react-bootstrap";
+import {Row} from "react-bootstrap";
 import style from "./Cyclecard.module.css";
 function useWidth(){
     const [width,setWidth]=useState(0)
@@ -19,6 +21,11 @@ function useWidth(){
     
     
 function Cyclecard(props){
+    function makeLinkHandeler(link){
+        return (e)=>{
+            window.open(link,'_blank')
+        }
+    }
     const data = props.data;
     const w=useWidth();
     const show = useRef([])
@@ -50,9 +57,23 @@ function Cyclecard(props){
         props.onSelect(rightnow-1);
         cardWidthAjust();
     }
-    return (<Container className="position-relative d-flex w-100 align-items-center justify-content-center">
+    return (<Container fluid className="position-relative d-flex w-100 align-items-center justify-content-center">
         <FiArrowLeft className={style.imagesize} onClick={leftClick}/>
             {show.current.map((val,ind)=>{
+                if (val.link){
+                    const linkHandeler=makeLinkHandeler(val.link)
+                    return(
+                            <Card key={ind+"cards"} style={{width:'14em',height:'19em'}} className="position-relative overflow-hidden mx-3" onClick={linkHandeler}>
+                                <Card.Img variant="top" src={val.img} style={{height:'8em'}}></Card.Img>
+                                <Card.Body>
+                                    <Card.Title>{val.title}</Card.Title>
+                                    <Card.Text>
+                                    {val.text}
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                    )
+                }
                 return(
                     <Card key={ind+"cards"} style={{width:'14em',height:'19em'}} className="position-relative overflow-hidden mx-3">
                     <Card.Img variant="top" src={val.img} style={{height:'8em'}}></Card.Img>
@@ -62,7 +83,7 @@ function Cyclecard(props){
                         {val.text}
                         </Card.Text>
                     </Card.Body>
-                </Card>
+                    </Card>
                 )
             })}
         <FiArrowRight className={style.imagesize} onClick={rightClick}/>
@@ -70,13 +91,3 @@ function Cyclecard(props){
 }
 
 export default Cyclecard;
-
-{/* <Card key={ind+"cards"} style={{width:'10em',height:'15em'}} className="position-relative overflow-hidden mx-3">
-<Card.Img variant="top" src={val.img}></Card.Img>
-<Card.Body>
-    <Card.Title>{val.title}</Card.Title>
-    <Card.Text>
-    {val.text}
-    </Card.Text>
-</Card.Body>
-</Card> */}
