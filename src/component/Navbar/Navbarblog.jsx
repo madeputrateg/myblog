@@ -9,7 +9,7 @@ function Navbarblog(props){
         <div>
         <Navbar bg="light" expand="lg" >
           <Container>
-            <Navbar.Brand href="#">Home</Navbar.Brand>
+            <Navbar.Brand href="/myblog">Home</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
             </Navbar.Collapse>
