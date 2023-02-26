@@ -17,7 +17,7 @@ function Navbarblog(props){
         </Navbar>
         <Navbar bg="light" expand="lg" className="fixed-top">
           <Container>
-            <Navbar.Brand href="/myblog/">Home</Navbar.Brand>
+            <Navbar.Brand href="/myblog">Home</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
@@ -25,13 +25,13 @@ function Navbarblog(props){
                 style={{ maxHeight: '300px' }}
                 navbarScroll
                 >
-                <Nav.Link href="/myblog/project/">
+                <Nav.Link href="/myblog/project">
                   Project
                 </Nav.Link>
-                <Nav.Link href="/myblog/achievement/">
+                <Nav.Link href="/myblog/achievement">
                 Achievement
                 </Nav.Link>
-                <Nav.Link href="/myblog/contact/" >
+                <Nav.Link href="/myblog/contact" >
                   Contact info
                 </Nav.Link>
               </Nav>
