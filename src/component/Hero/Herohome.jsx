@@ -27,7 +27,7 @@ function Herohome(props){
                 </div>
                 <Container className="position-relative h-100 w-50 d-flex flex-column align-items-center justify-content-center text-justify">
                     <div className={robotoheavy.className + " h3"}>Halo, Pekenalakan saya made putra teguh pramana</div>
-                    <div className={roboto.className + " h5"}>-&quottetap teguh dimana yang lain tidak&quot</div>
+                    <div className={roboto.className + " h5"}>-&quot;tetap teguh dimana yang lain tidak&quot;</div>
                 </Container>
             </Container>
             <Container className="position-relative h-100 w-100">
