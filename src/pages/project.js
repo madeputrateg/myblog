@@ -10,18 +10,18 @@ const data=[
     {
         title:"Agen Sertifikat",
         text:"agen sertifikat adalah websites yang dibuat untuk memudahkan pengguna di dalam pembuatan sertifikat",
-        img:"/agenser.svg",
+        img:"https://drive.google.com/uc?id=1luSFtQq2gWeS93WWluzlBcApYw7lsVY7",
         link:"https://kelompokrplunud.github.io/front-end1/",
     },
     {
         title:"AI batu gunting kertas",
         text:"AI adalah suatu mesin yang diberikan beberapa data agar dapat melakukan hal-hal yang sulit dilakukan menggunakan bahasa pemerogramaan. saya memebuat ai ini karena ingin memperdalam kemampuan di dalam machine learning",
-        img:"/gtt.png",
+        img:"https://drive.google.com/uc?id=1p763FxEV9DuhFQtibXn5Sfmf4GIDQ7em",
     },
     {
         title:"SIC backend",
         text:"SIC memiliki website yang digunakan oleh organisasi tersebut untuk mengenalkan kegiatan dan anggota yang dimiliki oleh organisasi tersebut. website tersebut direncanakan untuk diupgrade sehingga memiliki backend yang menggunakan bahasa golang",
-        img:"/golang-img.png",
+        img:"https://drive.google.com/uc?id=1sg5iARaeRfsZF4Dfs7GrO2Aaft7WyMjd",
         link:"https://github.com/SIC-Unud/sic-web-backend",
     }
 ]

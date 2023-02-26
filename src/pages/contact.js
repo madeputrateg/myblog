@@ -28,7 +28,7 @@ function Contact(props){
                     </Row>
                     <Row lg={8} className="position-relative d-flex justify-content-center align-items-center">
                         <Image 
-                        src="/cv.png"
+                        src="https://drive.google.com/uc?id=1NG3LFkAwjcgwUvEuJWn0jmfzwzYAb4yj"
                         height={500}
                         width={300}
                         alt="cv"

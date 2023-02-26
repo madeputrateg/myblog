@@ -11,27 +11,27 @@ const data=[
     {
         title:"CP competition",
         text:"it was a programing competition that was held in universitas sumatera, the competition was a team of three and we manage to win by a slim chances",
-        img:"/unvsum.png",
+        img:"https://drive.google.com/uc?id=1-ZK1PQdgBVnne7Fe5CE7FXxtkUPyCuQ9",
     },
     {
         title:"leetcode",
         text:"i finish all the easy task in leetcode. i did it on python programming languange since it requiered some level of focus to finish them but i overcame it.",
-        img:"/ml.jpg",
+        img:"https://drive.google.com/uc?id=1v5mvOEukbf1BpUvHmmC_BBdhyamDstNf",
     },
     {
         title:"porseni",
         text:"one of the competition that was held in porseni was mobile legend competition. i thought to myself i give it a try and to myself i was suprise i won 1st place",
-        img:"/leet.png",
+        img:"https://drive.google.com/uc?id=1ALAatg2I14Mu2YiVMSrtvTAcARPSiYhY",
     },
     {
         title:"kaggle machinelearning tutorial",
         text:"i finish some course that avilable in kaggle that's related to machine learning.most of the machine learning course in kaggle are using tensorflow and sklearn",
-        img:"/kaggle.png",
+        img:"https://drive.google.com/uc?id=1ggaUKKgmQFofsrC3m6_TG6ox4FO21tae",
     },
     {
         title:"tensor flow",
         text:"i did some of the tensorflow tutorial that avilable in tensorflow download page.",
-        img:"/google.png",
+        img:"https://drive.google.com/uc?id=1hZz3QOIoG9Aqcvx8hqutArvE2UIsbpUQ",
     },
 ]
 
